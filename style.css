@@ -16,7 +16,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #333;
-    padding: 1px 10px;
+    padding: -5px 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Slight elevation effect */
     position: fixed; /* Make it sticky */
     top: 0;
