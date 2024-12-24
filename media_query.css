@@ -3,10 +3,15 @@
   /* Navbar */
   .navbar {
     flex-direction: column;
-    padding: 15px;
     align-items: center;
   }
 
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+}
   .menu {
     flex-direction: column;
     align-items: center;
@@ -28,7 +33,15 @@
     margin: 20px 0;
     max-width: 100%;
   }
+  .hero-image img {
+    width: 150px;
+    height: 150px;
+}
 
+.about__img {
+    width: 150px;
+    height: 150px;
+}
   .hero-text h1,
   .hero-text h2,
   .hero-text p {
