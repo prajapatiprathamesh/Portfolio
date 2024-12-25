@@ -97,7 +97,7 @@
   }
 
   /* Projects Section */
-  .projects-grid {
+  /* .projects-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
@@ -105,8 +105,26 @@
   .project-card {
     max-width: 100%;
     margin: 0 auto;
+  } */
+  .project-card {
+    flex-direction: column;
   }
 
+  .projects-grid {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+  }
+
+  .project-buttons {
+    gap: 8px; /* Adjust gap for smaller screens */
+  }
+
+  .project-buttons .btn {
+    width: auto; /* Allow buttons to adjust their width dynamically */
+    font-size: 14px; /* Smaller font size for small screens */
+    height: auto; /* Adjust height */
+  }
+}
+  
   /* Certificates Section */
   .certificates-grid {
     grid-template-columns: 1fr;
@@ -115,7 +133,7 @@
 
   /* Contact Section */
   .contact-buttons {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 15px;
   }
@@ -124,4 +142,4 @@
     width: 90%;
     text-align: center;
   }
-}
+
