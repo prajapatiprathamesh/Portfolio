@@ -30,7 +30,7 @@
   font-size: 1.5rem;
   color: #f4c10f;
   margin: 0;
-  margin-left: 12px;
+  margin-left: 10px;
 }
 
 .nav-list {
@@ -205,20 +205,20 @@
 
 
 .btn:hover {
-  background-color: #0056b3; /* Change background color on hover */
-  color: #fff; /* Ensure text color remains readable */
+  background-color: #0056b3; 
+  color: #fff; 
 }
 
 .about__image:hover {
-  background-color: rgba(255, 255, 255, 0.05); /* Add a subtle background highlight */
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add a shadow */
-  transform: scale(1.02); /* Slightly enlarge the section */
-  transition: all 0.3s ease-in-out; /* Smooth transition */
+  background-color: rgba(255, 255, 255, 0.05); 
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+  transform: scale(1.02); 
+  transition: all 0.3s ease-in-out; 
 }
 
 
 .nav-list a.active {
-  color: #f4c10f; /* Highlight color */
+  color: #f4c10f; 
   font-weight: bold;
   border-bottom: 2px solid #f4c10f;
   transition: 0.3s ease;
@@ -274,6 +274,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 20px;
+  position: relative;
 }
 
 .skill-card {
@@ -306,6 +307,14 @@
   font-size: 0.9rem;
   color: #d3d3d3; /* Slightly dimmed text color for descriptions */
 }
+
+.skill-card:hover ~ .skill-card {
+  filter: blur(3px);
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+
 
 
 /* Project */
@@ -372,22 +381,22 @@
   padding: 5px 0;
   font-size: 14px;
   line-height: 1.5;
-  max-height: 150px; /* Sets a maximum height for the text block */
+  max-height: 150px; 
   overflow-y: auto; /* Enables vertical scrolling */
   overflow-x: hidden; /* Prevents horizontal scrolling */
-  scrollbar-width: thin; /* For thinner scrollbars (works in modern browsers) */
+  scrollbar-width: thin; 
 }
 
 .project-buttons {
   display: flex;
-  flex-wrap: wrap; /* Wrap buttons if needed */
+  flex-wrap: wrap; 
   justify-content: center;
-  gap: 10px; /* Space between buttons */
+  gap: 10px; 
   margin-top: 10px;
 }
 .project-buttons .btn {
   padding: 5px 10px;
-  font-size: 16px; /* Adjusted font size for smaller screens */
+  font-size: 16px; 
   border-radius: 6px;
   text-decoration: none;
   color: black;
@@ -428,13 +437,13 @@
 /* Projects Section Title and Description */
 #projects .section__header {
   font-size: 2.2rem;
-  color: #f4c10f; /* Highlight the title in gold */
+  color: #f4c10f; 
   margin-bottom: 10px;
 }
 
 #projects .section__description {
   font-size: 1.2rem;
-  color: #ddd; /* Softer white for the description */
+  color: #ddd; 
   margin-bottom: 30px;
 }
 .project-buttons .btn:hover {
@@ -442,6 +451,33 @@
   color: white;
 }
 
+/* This section used for button(ALL,DA...) */
+.projects-buttons .btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  background-color: #81C784; /* Lighter green for default state */
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: none;
+  white-space: nowrap; /* Prevents text wrapping within buttons */
+  flex-shrink: 0;
+}
+.projects-buttons {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 10px; 
+}
+/* .projects-buttons .btn:hover {
+  background-color: #66BB6A; 
+  color: white;
+}
+
+.projects-buttons .btn:active {
+  background-color: #4CAF50; 
+} */
 
 /* Education Section */
 #education {
@@ -534,7 +570,10 @@
 
 .contact-buttons {
   display: flex;
-  gap: 15px;
+  flex-direction: row; /* Ensure buttons are in a row */
+  justify-content: center; /* Center the buttons */
+  align-items: center;
+  gap: 15px; /* Space between buttons */
 }
 
 .contact-button {
@@ -542,22 +581,22 @@
   align-items: center;
   justify-content: center;
   padding: 12px 20px;
-  border: 2px solid #d3d3d3; /* Light border */
+  border: 2px solid #d3d3d3;
   border-radius: 30px;
   background-color: transparent;
   color: #f9f9f9;
   font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
-  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  transition: all 0.3s ease; 
 }
 
 .contact-button:hover {
   background-color: white;
   color: #121212; /* Contrast on hover */
   border-color:white;
-  transform: translateY(-5px); /* Slight lift effect on hover */
-  box-shadow: 0 5px 15px rgba(255, 91, 181, 0.3); /* Add a subtle shadow */
+  transform: translateY(-5px); 
+  box-shadow: 0 5px 15px rgba(255, 91, 181, 0.3); 
 }
 
 .contact-icon {
@@ -568,7 +607,7 @@
 }
 
 .contact-button:hover .contact-icon {
-  filter: invert(0); /* Make the icon visible when the button changes */
+  filter: invert(0); 
 }
 
 
@@ -654,18 +693,6 @@ btn {
   background-color: #D3D3D3;
   
 }
-
-
-/* .btn.github {
-  background-color: #333333;
-  border-color: #222222;
-}
-
-.btn.github:hover {
-  color: #333333;
-  background-color: white;
-  border-color: #111111;
-} */
 
 
 /* Certificates Section Styles */
