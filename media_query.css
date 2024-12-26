@@ -71,18 +71,13 @@
 
 /* Skills Section */
 .skills-grid {
-    grid-template-columns: 1fr; /* Single column layout for smaller devices */
-    gap: 10px; /* Reduce gap for better spacing */
+    grid-template-columns: 1fr; 
+    gap: 10px; 
   }
 
 .skill-card {
     text-align: center;
-    font-size: 0.75rem; /* Smaller font size (12px, assuming root is 16px) */
-    white-space: nowrap; /* Prevent text from wrapping */
-    overflow: hidden; /* Hide overflowing text */
-    text-overflow: ellipsis; /* Add ellipsis for long text */
-    padding: 8px; /* Adjust padding for smaller devices */
-    box-sizing: border-box; /* Include padding in width calculations */
+    font-size: 0.60rem; 
   }
 
 .skill-icon {
@@ -90,7 +85,6 @@
     height: auto;
     margin-bottom: 5px; /* Add spacing below the icon */
   }
-
 
   /* Education Section */
   .education-grid {
