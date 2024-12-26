@@ -69,36 +69,32 @@
     padding: 15px;
   }
 
-  /* Skills Section */
+/* Skills Section */
   .skills-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
 
+.skill-card {
+  text-align: center;
+  font-size: 16px; /* Default font size */
+  word-wrap: break-word; /* Ensure long words break and wrap */
+  overflow-wrap: break-word; /* Alternative for modern browsers */
+  padding: 10px; /* Add padding for better spacing */
+  box-sizing: border-box; /* Include padding in width calculations */
+}
+
+.skill-icon {
+  max-width: 100px;
+  height: auto;
+}
+
+/* Media query for smaller devices */
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
   .skill-card {
-    text-align: center;
+    font-size: 14px; /* Define a smaller font size */
   }
-
-  .skill-icon {
-    max-width: 100px;
-    height: auto;
-  }
-  
-  @media screen and (max-width: 480px) {
-    .skills-grid {
-      grid-template-columns: 1fr;
-      gap: 20px;
-    }
-  
-    .skill-card {
-      text-align: center;
-    }
-  
-    .skill-icon {
-      max-width: 100px;
-      height: auto;
-    }
-  }
+}
 
   /* Education Section */
   .education-grid {
