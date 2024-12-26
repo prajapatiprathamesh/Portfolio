@@ -248,7 +248,7 @@
 }
 
 /* Skills Section */
-#skills {
+ #skills {
   padding: 40px 20px;
   background-color: #121212; /* Dark background */
   text-align: center;
@@ -274,16 +274,21 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 20px;
-  position: relative;
+  /* position: relative; */
 }
 
 .skill-card {
   text-align: center;
-  padding: 20px;
-  border: 1px solid #2c2c2c; /* Subtle border */
-  border-radius: 10px;
-  background-color: #242424; /* Card background color */
-  transition: all 0.3s ease;
+  font-size: 1rem; /* Default font size (16px) */
+  word-wrap: break-word; /* Handle word breaking */
+  overflow-wrap: break-word; /* Handle word breaking */
+  padding: 1rem; /* Padding (16px) */
+  box-sizing: border-box; /* Include padding in width calculations */
+  border: 1px solid #333; /* Optional: Add a border for clarity */
+  background-color: #111; /* Optional: Background color */
+  color: #fff; /* Text color for visibility */
+  max-width: 100%; /* Prevent card content from overflowing */
+  height: auto; /* Ensure proper height adjustment */
 }
 
 .skill-card:hover {
@@ -313,8 +318,6 @@
   opacity: 0.5;
   transition: all 0.3s ease;
 }
-
-
 
 
 /* Project */
