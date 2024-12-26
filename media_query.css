@@ -70,38 +70,26 @@
   }
 
 /* Skills Section */
-@media (max-width: 768px) {
-  .skill-card {
-    font-size: 0.65rem; /* Smaller font size */
-    padding: 0.75rem; /* Adjust padding for smaller devices */
-    display: flex; /* Use flexbox for layout control */
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center-align text and icons */
+.skills-grid {
+    grid-template-columns: 1fr; /* Single column layout for smaller devices */
+    gap: 10px; /* Reduce gap for better spacing */
   }
 
-  .skill-icon {
-    max-width: 4rem; /* Adjust icon size for smaller devices (64px) */
-  }
-
-  .skill-card p {
-    margin: 0;
-    line-height: 1.2; /* Adjust line height */
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap; /* Force text to stay on one line */
-    font-size: 0.6rem; /* Adjust font size for smaller text */
-  }
-
-  .skill-card h3 {
-    margin: 0;
-    white-space: nowrap; /* Prevent skill names from wrapping */
+.skill-card {
     text-align: center;
-    font-size: 0.8rem; /* Smaller size for skill names */
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-size: 0.75rem; /* Smaller font size (12px, assuming root is 16px) */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add ellipsis for long text */
+    padding: 8px; /* Adjust padding for smaller devices */
+    box-sizing: border-box; /* Include padding in width calculations */
   }
-}
 
+.skill-icon {
+    max-width: 80px; /* Smaller icon size */
+    height: auto;
+    margin-bottom: 5px; /* Add spacing below the icon */
+  }
 
 
   /* Education Section */
