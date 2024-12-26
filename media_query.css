@@ -96,16 +96,6 @@
     max-width: 300px;
   }
 
-  /* Projects Section */
-  /* .projects-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .project-card {
-    max-width: 100%;
-    margin: 0 auto;
-  } */
   .project-card {
     flex-direction: column;
   }
@@ -119,9 +109,9 @@
   }
 
   .project-buttons .btn {
-    width: auto; /* Allow buttons to adjust their width dynamically */
-    font-size: 14px; /* Smaller font size for small screens */
-    height: auto; /* Adjust height */
+    width: auto; 
+    font-size: 14px; 
+    height: auto; 
   }
 }
   
@@ -131,15 +121,42 @@
     gap: 20px;
   }
 
-  /* Contact Section */
-  .contact-buttons {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+
+
+  @media (max-width: 480px) {
+    .contact-buttons {
+      flex-wrap: wrap; 
+      justify-content: center; 
+      gap: 10px; 
+    }
+  
+    .contact-button {
+      width: 100%; 
+      padding: 10px 15px; 
+      font-size: 0.9rem; 
+    }
+  
+    .contact-icon {
+      width: 18px; /* Reduce icon size slightly */
+      height: 18px;
+      margin-right: 8px; /* Adjust spacing between icon and text */
+    }
   }
 
-  .contact-button {
-    width: 70%;
-    text-align: center;
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .projects-buttons .btn {
+      padding: 8px 16px; /* Smaller padding */
+      font-size: 14px;  /* Reduced font size */
+      border-radius: 4px; /* Adjusted border radius */
   }
+}
 
+/* For mobile screens */
+@media (max-width: 480px) {
+  .projects-buttons .btn {
+      padding: 6px 12px; /* Compact padding */
+      font-size: 12px;  /* Further reduced font size */
+      border-radius: 4px; /* Keep it consistent */
+  }
+}
