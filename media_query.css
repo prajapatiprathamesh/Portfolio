@@ -70,26 +70,38 @@
   }
 
 /* Skills Section */
- @media (max-width: 768px) {
-    .skill-card {
-      font-size: 0.60rem; /* Smaller font size (14px) */
-      padding: 0.75rem; /* Adjust padding for smaller devices */
-    }
-  
-    .skill-icon {
-      max-width: 4rem; /* Adjust icon size for smaller devices (64px) */
-    }
+@media (max-width: 768px) {
+  .skill-card {
+    font-size: 0.65rem; /* Smaller font size */
+    padding: 0.75rem; /* Adjust padding for smaller devices */
+    display: flex; /* Use flexbox for layout control */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center-align text and icons */
   }
-  
-  /* Add overflow handling */
+
+  .skill-icon {
+    max-width: 4rem; /* Adjust icon size for smaller devices (64px) */
+  }
+
   .skill-card p {
-    margin: 0; 
-    line-height: 1.4; 
-    overflow: hidden; 
-    text-overflow: ellipsis; 
-    font-size: 0.5rem;
+    margin: 0;
+    line-height: 1.2; /* Adjust line height */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; /* Force text to stay on one line */
+    font-size: 0.6rem; /* Adjust font size for smaller text */
   }
-  
+
+  .skill-card h3 {
+    margin: 0;
+    white-space: nowrap; /* Prevent skill names from wrapping */
+    text-align: center;
+    font-size: 0.8rem; /* Smaller size for skill names */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
 
 
   /* Education Section */
