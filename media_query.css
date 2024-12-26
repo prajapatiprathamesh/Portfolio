@@ -70,37 +70,25 @@
   }
 
 /* Skills Section */
- 
-.skills-grid {
-  display: grid; /* Ensure grid display */
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
-  gap: 1.25rem; /* Space between items (20px) */
-}
-
-.skill-card {
-  text-align: center;
-  font-size: 1rem; /* Default font size (16px, assuming root is 16px) */
-  word-wrap: break-word; /* Handle word breaking */
-  overflow-wrap: break-word; /* Handle word breaking */
-  padding: 0.625rem; /* Padding (10px) */
-  box-sizing: border-box; /* Include padding in width calculations */
-  border: 1px solid #333; /* Optional: Add a border for clarity */
-  background-color: #111; /* Optional: Background color */
-  color: #fff; /* Text color for visibility */
-}
-
-.skill-icon {
-  max-width: 5rem; /* Icon size (80px) */
-  height: auto;
-  margin-bottom: 0.625rem; /* Space below the icon (10px) */
-}
-
-/* Media query for smaller devices */
-@media (max-width: 768px) {
-  .skill-card {
-    font-size: 0.875rem; /* Smaller font size (14px, assuming root is 16px) */
+ @media (max-width: 768px) {
+    .skill-card {
+      font-size: 0.875rem; /* Smaller font size (14px) */
+      padding: 0.75rem; /* Adjust padding for smaller devices */
+    }
+  
+    .skill-icon {
+      max-width: 4rem; /* Adjust icon size for smaller devices (64px) */
+    }
   }
-}
+  
+  /* Add overflow handling */
+  .skill-card p {
+    margin: 0; 
+    line-height: 1.4; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+  }
+  
 
 
   /* Education Section */
