@@ -70,38 +70,46 @@
   }
 
 /* Skills Section */
-@media (max-width: 768px) {
-  body {
-    max-width: 768px !important;
-    margin: 0 auto !important;
-    overflow-x: hidden !important;
+.skills-grid {
+    grid-template-columns: 1fr; 
+    gap: 10px; 
   }
 
-  .skills-grid {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    gap: 10px !important;
+.skill-card {
+    text-align: center;
+    font-size: 0.60rem; 
   }
 
-  .skill-card {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
-    font-size: 0.8rem !important;
+.skill-icon {
+    max-width: 80px; 
+    height: auto;
+    margin-bottom: 5px; 
   }
+  .skill-card p {
+    font-size: 0.9rem;
+    color: #d3d3d3;   
+}
 
-  .skill-icon {
-    width: 60px !important;
-    height: auto !important;
-    margin-bottom: 10px !important;
-  }
+ @media screen and (max-width: 480px) {
+    .skills-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  
+    .skill-card {
+      text-align: center;
+    }
+  
+    .skill-icon {
+      max-width: 100px;
+      height: auto;
+    }
 
   .skill-card p {
-    font-size: 0.6rem !important;
-    color: #d3d3d3 !important;
+    font-size: 0.5rem;
+    color: #d3d3d3; /* Slightly dimmed text color for descriptions */
   }
-}
+ }
 
 
 
