@@ -70,25 +70,30 @@
   }
 
 /* Skills Section */
-.skills-grid {
-    grid-template-columns: 1fr; 
-    gap: 10px; 
+@media (max-width: 768px) {
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
   }
 
-.skill-card {
+  .skill-card {
     text-align: center;
-    font-size: 0.60rem; 
+    font-size: 0.8rem;
   }
 
-.skill-icon {
-    max-width: 80px; /* Smaller icon size */
+  .skill-icon {
+    max-width: 60px;
     height: auto;
-    margin-bottom: 5px; /* Add spacing below the icon */
+    margin-bottom: 10px;
   }
+
   .skill-card p {
-    font-size: 0.5rem;
-    color: #d3d3d3; /* Slightly dimmed text color for descriptions */
+    font-size: 0.6rem;
+    color: #d3d3d3;
   }
+}
+
 
   /* Education Section */
   .education-grid {
