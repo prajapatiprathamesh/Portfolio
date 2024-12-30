@@ -85,6 +85,10 @@
     height: auto;
     margin-bottom: 5px; /* Add spacing below the icon */
   }
+  .skill-card p {
+    font-size: 0.5rem;
+    color: #d3d3d3; /* Slightly dimmed text color for descriptions */
+  }
 
   /* Education Section */
   .education-grid {
