@@ -248,7 +248,7 @@
 }
 
 /* Skills Section */
-/*  #skills {
+ #skills {
   padding: 40px 20px;
   background-color: #121212; /* Dark background */
   text-align: center;
@@ -313,110 +313,6 @@
   opacity: 0.5;
   transition: all 0.3s ease;
 }
-
- */
-/*--------------------------------  */
-/*skill section try  */
-
-#skills {
-  padding: 40px 20px;
-  background-color: #121212; /* Dark background */
-  text-align: center;
-}
-
-.skills-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  border-radius: 15px;
-  background-color: #1e1e1e; /* Slightly lighter dark background for contrast */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  padding: 20px 30px;
-}
-
-.skills-container h2 {
-  font-size: 1.8rem;
-  color: #f9f9f9; /* Light text color for contrast */
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-
-/* Responsive Grid Layout */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-  position: relative;
-}
-
-/* Skill Cards */
-.skill-card {
-  text-align: center;
-  padding: 20px;
-  border: 1px solid #2c2c2c; /* Subtle border */
-  border-radius: 10px;
-  background-color: #242424; /* Card background color */
-  transition: all 0.3s ease;
-}
-
-.skill-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
-}
-
-.skill-icon {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 10px;
-}
-
-.skill-card h3 {
-  font-size: 1.2rem;
-  color: #f9f9f9; /* Light text color */
-  margin-bottom: 5px;
-}
-
-.skill-card p {
-  font-size: 0.9rem;
-  color: #d3d3d3; /* Slightly dimmed text color for descriptions */
-}
-
-/* Fix Hover Blur Issue */
-@media screen and (min-width: 769px) {
-  .skill-card:hover ~ .skill-card {
-    filter: blur(3px);
-    opacity: 0.5;
-    transition: all 0.3s ease;
-  }
-}
-
-/* RESPONSIVENESS */
-
-/* Tablets & Small Screens */
-@media screen and (max-width: 768px) {
-  .skills-grid {
-    grid-template-columns: repeat(2, minmax(120px, 1fr)); /* Two columns */
-  }
-
-  .skill-card {
-    padding: 15px;
-  }
-}
-
-/* Mobile Phones */
-@media screen and (max-width: 480px) {
-  .skills-grid {
-    grid-template-columns: repeat(1, minmax(150px, 1fr)); /* Single column */
-  }
-
-  .skills-container {
-    padding: 15px;
-  }
-
-  .skill-card {
-    padding: 10px;
-  }
-}
-/*---------------------------------  */
 
 /* Project */
 
