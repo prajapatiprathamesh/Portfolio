@@ -111,45 +111,6 @@
   }
  }
 
-
-/*-------------------  */
-@media screen and (min-width: 769px) {
-  .skill-card:hover ~ .skill-card {
-    filter: blur(3px);
-    opacity: 0.5;
-    transition: all 0.3s ease;
-  }
-}
-
-/* RESPONSIVENESS */
-
-/* Tablets & Small Screens */
-@media screen and (max-width: 768px) {
-  .skills-grid {
-    grid-template-columns: repeat(2, minmax(120px, 1fr)); /* Two columns */
-  }
-
-  .skill-card {
-    padding: 15px;
-  }
-}
-
-/* Mobile Phones */
-@media screen and (max-width: 480px) {
-  .skills-grid {
-    grid-template-columns: repeat(1, minmax(150px, 1fr)); /* Single column */
-  }
-
-  .skills-container {
-    padding: 15px;
-  }
-
-  .skill-card {
-    padding: 10px;
-  }
-}
-/*------------------  */
-
 /* Education Section */
   .education-grid {
     flex-direction: column;
